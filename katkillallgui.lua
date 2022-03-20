@@ -2,6 +2,8 @@
 -- // ORIGINALLY MADE BY: UNKNOWN \\
 -- // IMPROVED BY: NOLIX \\
 
+-- // PLEASE NOTE: YOU MUST HAVE YOUR WEAPONS LOADED AND NONE OF THEM PULLED OUT IF YOU WANT THE SCRIPT TO WORK \\
+
 -- gui code
 local KillAllGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
