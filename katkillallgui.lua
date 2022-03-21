@@ -163,3 +163,12 @@ function mainCode()
 		end
 	end
 end
+
+-- lets the local player know the script has finished loading
+pcall(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Successfully loaded!",
+        Text = "Please make sure to type your keybind in CAPS.",
+        Duration = 5
+   	})
+end)
