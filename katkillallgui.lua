@@ -162,6 +162,9 @@ function mainCode()
 			wait(0.3)
 		end
 	end
+	
+	-- unequips all the tools i.e: the knife
+	game:GetService("Players").LocalPlayer.Character.Humanoid:UnequipTools()
 end
 
 -- lets the local player know the script has finished loading
