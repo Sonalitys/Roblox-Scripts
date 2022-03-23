@@ -151,7 +151,7 @@ end)
 
 function mainCode()
     -- main for loop
-	for _, player in next game:GetService("Players"):GetPlayers() do
+	for _, player in next, game:GetService("Players"):GetPlayers() do
 	    -- checks if the player in the loop isnt the local player, you cant teleport to yourself lol
 		if player ~= game:GetService("Players").LocalPlayer then
 		    -- teleports to the player currently caught in the loop
