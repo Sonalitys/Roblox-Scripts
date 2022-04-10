@@ -1,3 +1,5 @@
+-- ORIGINAL SCRIPT // https://v3rmillion.net/showthread.php?tid=1165198 \\
+
 --local player = "target name here" uncomment out this line if you arent running this from the loadstring
 
 game.ReplicatedStorage:FindFirstChild(".gg/untitledhood"):FireServer(
