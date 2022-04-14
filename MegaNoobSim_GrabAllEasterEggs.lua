@@ -1,3 +1,7 @@
+-- // MEGA NOOB SIMULATOR GRAB ALL 2022 EASTER EGGS \\
+-- // MADE BY: NOLIX \\
+-- // REQUESTED BY: JAWMAN2000 ON WRD \\
+
 -- checks if local player exists
 if game:GetService("Players").LocalPlayer.Character.Humanoid then
     -- gets all the eggs which are in game
