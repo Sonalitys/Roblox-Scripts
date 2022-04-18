@@ -10,7 +10,7 @@ if game:GetService("Players").LocalPlayer.Character.Humanoid then
         -- teleports to the current found egg
         game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = egg.CFrame
         -- delays a little to not cause issues with the teleporting sequence
-        task.wait(0.3)
+        task.wait()
     end
     
     -- teleports local player to spawn, signifying that the script has finished getting all the eggs (or this may occur when the script cant find any eggs)
