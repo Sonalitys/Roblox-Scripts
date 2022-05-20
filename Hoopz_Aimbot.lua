@@ -57,6 +57,6 @@ end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Hoopz Aimbot Loaded",
-        Text = "Sucessfully loaded, your keybind is currently " .. tostring(getgenv().settings.Keybind),
+        Text = "Sucessfully loaded",
         Duration = 5
 })
