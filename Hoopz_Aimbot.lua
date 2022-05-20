@@ -54,3 +54,9 @@ game:GetService("RunService").RenderStepped:Connect(function()
         end
     end
 end)
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Hoopz Aimbot Loaded",
+        Text = "Sucessfully loaded, your keybind is currently " .. getgenv().settings.Keybind,
+        Duration = 5
+})
