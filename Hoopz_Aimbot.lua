@@ -56,7 +56,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "Hoopz Aimbot Loaded",
-        Text = "Sucessfully loaded",
-        Duration = 5
+    Title = "Hoopz Aimbot Loaded",
+    Text = "Proudly made by Kitzoon#7750",
+    Duration = 5
 })
