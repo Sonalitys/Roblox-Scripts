@@ -1,4 +1,4 @@
--- // HOOPZ AIMBOT SCRIPT MADE BY NOLIX AKA KITZOON \\
+-- // HOOPZ AIMBOT SCRIPT MADE BY NOLIX AKA Kitzoon#7750 \\
 -- // some reason all the script devs like to make there scripts paid if they make it for this game lol, garbage ass money milkers \\
 -- // https://www.roblox.com/games/6229116934 \\
 
