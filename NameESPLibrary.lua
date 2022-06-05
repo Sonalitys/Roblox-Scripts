@@ -3,12 +3,12 @@
 
 espLib = {}
 
-function espLib:esp(object, text)
+function espLib:esp(object, text, color)
     local espText = Drawing.new("Text")
     espText.Visible = false
     espText.Center = true
     espText.Font = 3
-    espText.Color = Color3.fromRGB(255,255,255)
+    espText.Color = color
     espText.Size = 15
     
     game:GetService("RunService").RenderStepped:Connect(function()
