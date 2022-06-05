@@ -14,11 +14,13 @@ function espLib:esp(object, text, color)
     game:GetService("RunService").RenderStepped:Connect(function()
         local objectPos, onScreen = game:GetService("Workspace").Camera:WorldToViewportPoint(object.Position)
         
-        if object.Parent:FindFirstChildOfClass("Humanoid").Health == 0 or object == nil then
-            espText.Visible = false
-            espText:Remove()
-        end
-        
+        pcall(function()
+            if object == nil or object.Parent:FindFirstChildOfClass("Humanoid").Health == 0 then
+                espText.Visible = false
+                espText:Remove()
+            end
+        end)
+
         if onScreen and object ~= nil and espText then
             espText.Position = Vector2.new(objectPos.X, objectPos.Y)
             espText.Text = text
