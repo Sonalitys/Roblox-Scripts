@@ -15,7 +15,7 @@ function espLib:esp(object, text, color)
         local objectPos, onScreen = game:GetService("Workspace").Camera:WorldToViewportPoint(object.Position)
         
         pcall(function()
-            if object == nil and not object.Parent:FindFirstChildOfClass("Humanoid") then
+            if object == nil then
                 espText.Visible = false
                 espText:Remove()
             elseif object.Parent:FindFirstChildOfClass("Humanoid").Health == 0 then
