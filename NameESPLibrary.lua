@@ -3,7 +3,7 @@
 
 espLib = {}
 
-function espLib:esp(object, text, color, isPlayer)
+function espLib:esp(object, text, color)
     local espText = Drawing.new("Text")
     espText.Visible = false
     espText.Center = true
