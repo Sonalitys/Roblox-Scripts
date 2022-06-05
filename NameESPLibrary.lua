@@ -3,7 +3,7 @@
 
 espLib = {}
 
-function espLib:esp(object, text, color)
+function espLib:esp(object, text, color, isPlayer)
     local espText = Drawing.new("Text")
     espText.Visible = false
     espText.Center = true
@@ -14,8 +14,8 @@ function espLib:esp(object, text, color)
     game:GetService("RunService").RenderStepped:Connect(function()
         local objectPos, onScreen = game:GetService("Workspace").Camera:WorldToViewportPoint(object.Position)
         
-        pcall(function()
-            if not object or object.Parent:FindFirstChildOfClass("Humanoid").Health == 0 then
+        object.AncestryChanged:Connect(function(child, parent)
+            if not child or not parent then
                 espText.Visible = false
                 espText:Remove()
             end
