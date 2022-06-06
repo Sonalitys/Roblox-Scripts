@@ -20,14 +20,16 @@ function espLib:esp(object, text, color)
                 espText:Remove()
             end
         end)
-
-        if onScreen and object ~= nil and espText then
-            espText.Position = Vector2.new(objectPos.X, objectPos.Y)
-            espText.Text = text
-            espText.Visible = true
-        else
-            espText.Visible = false
-        end
+        
+        pcall(function()
+            if onScreen and object ~= nil and espText then
+                espText.Position = Vector2.new(objectPos.X, objectPos.Y)
+                espText.Text = text
+                espText.Visible = true
+            else
+                espText.Visible = false
+            end
+        end)
     end)
 end
 
