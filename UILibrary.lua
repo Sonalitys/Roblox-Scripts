@@ -130,3 +130,5 @@ function library:CreateWindow(titleText, guiToggleKey)
 	
 	return buttonLibrary
 end
+
+return library
