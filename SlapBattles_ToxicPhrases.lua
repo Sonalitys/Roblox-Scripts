@@ -1,4 +1,4 @@
-local toxicPhrases = {
+getgenv().toxicPhrases = {
     "you got clapped",
     "nice one",
     "obviously, im better :p",
