@@ -3,14 +3,18 @@
 -- skids never win, only use this source to learn B)
 -- made by Kitzoon#7750
 
-if game.PlaceId ~= 8916037983 then return end
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
 
--- add this back in the code if your running from the source code
+if game.PlaceId ~= 8916037983 then return end
 
 -- getgenv().settings = {
 --     minBought = 100, -- the minimum amount of robux someone has bought for art in the past
 --     highlightColor = Color3.fromRGB(49, 145, 34) -- the color of the highlight/chams
 -- }
+
+-- ^^^ add this back if your running from source code
 
 for _, richTarget in next, game:GetService("Players"):GetPlayers() do
     if richTarget ~= game:GetService("Players").LocalPlayer and richTarget.leaderstats.Bought.Value >= getgenv().settings.minBought and richTarget.Character then
