@@ -11,16 +11,16 @@ function espLib:esp(object, text, color)
     espText.Color = color
     espText.Size = 15
     
+    object.AncestryChanged:Connect(function(child, parent)
+        if not child or not parent then
+            espText.Visible = false
+            espText:Remove()
+        end
+    end)
+    
     game:GetService("RunService").RenderStepped:Connect(function()
         local objectPos, onScreen = game:GetService("Workspace").Camera:WorldToViewportPoint(object.Position)
-        
-        object.AncestryChanged:Connect(function(child, parent)
-            if not child or not parent then
-                espText.Visible = false
-                espText:Remove()
-            end
-        end)
-        
+
         pcall(function()
             if onScreen and object ~= nil and espText then
                 espText.Position = Vector2.new(objectPos.X, objectPos.Y)
