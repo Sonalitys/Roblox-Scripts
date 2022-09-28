@@ -6,7 +6,7 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-repeat wait() until localPlr.Character ~= nil
+repeat wait() until localPlr ~= nil
 
 local teleportFunc = queueonteleport or queue_on_teleport or syn and syn.queue_on_teleport
 
