@@ -12,7 +12,7 @@ function espLib:esp(object, text, color)
     espText.Size = 15
     
     object.AncestryChanged:Connect(function(child, parent)
-        if not child or not parent then
+        if not child and connection and espText or not parent and connection and espText then
             espText.Visible = false
             espText:Remove()
             connection:Disconnect()
