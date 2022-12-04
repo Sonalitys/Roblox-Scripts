@@ -15,10 +15,11 @@ function espLib:esp(object, text, color)
         if not child or not parent then
             espText.Visible = false
             espText:Remove()
+            connection:Disconnect()
         end
     end)
     
-    game:GetService("RunService").RenderStepped:Connect(function()
+    connection = game:GetService("RunService").RenderStepped:Connect(function()
         local objectPos, onScreen = game:GetService("Workspace").Camera:WorldToViewportPoint(object.Position)
 
         pcall(function()
