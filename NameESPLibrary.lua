@@ -16,6 +16,7 @@ function espLib:esp(object, text, color)
             espText.Visible = false
             espText:Remove()
             connection:Disconnect()
+            task.wait(0.2)
         end
     end)
     
