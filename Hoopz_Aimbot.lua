@@ -6,14 +6,11 @@
 
 -- getgenv().settings = {
 --     Enabled = true,
---     -- // distance you need to be for the aimbot to lock on \\
+--     
 --     Distance = 200,
---     -- // how far up the aimbot will aim, helps to get good shots from long range \\
+--     
 --     AimbotHowFarUp = 20,
---     -- // links for what keybinds are available \\
---     -- // https://bit.ly/3NocEoA \\
---     -- // https://bit.ly/3wAkKFf \\
---     -- // if you want to use a KeyCode change Enum.UserInputType to Enum.KeyCode \\
+--
 --     Keybind = Enum.UserInputType.MouseButton3
 -- }
 
@@ -56,7 +53,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Hoopz Aimbot Loaded",
-    Text = "Proudly made by Kitzoon#7750",
+    Title = "Aimbot Loaded",
+    Text = "Celtmane Hub",
     Duration = 5
 })
